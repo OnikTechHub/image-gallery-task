@@ -1,0 +1,10 @@
+# System files
+.DS_Store
+Thumbs.db
+
+# Vercel
+.vercel
+
+# Node / Scratch files (if any)
+node_modules/
+*.log

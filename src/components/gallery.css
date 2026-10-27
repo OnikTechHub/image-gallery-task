@@ -1,0 +1,138 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f3f4f6;
+    color: #333333;
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header Styles */
+.header {
+    text-align: center;
+    padding: 40px 20px 20px;
+}
+
+.header h1 {
+    font-size: 2.2rem;
+    color: #1f2937;
+    margin-bottom: 8px;
+    font-weight: 700;
+}
+
+.header p {
+    font-size: 1rem;
+    color: #6b7280;
+}
+
+/* Main Gallery Section */
+.gallery-section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.gallery-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    max-width: 900px;
+    width: 100%;
+}
+
+/* Gallery Card */
+.gallery-card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    flex: 1;
+    max-width: 420px;
+}
+
+.gallery-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+/* Card Image Wrapper */
+.image-wrapper {
+    width: 100%;
+    height: 240px;
+    overflow: hidden;
+}
+
+.image-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.4s ease;
+}
+
+.gallery-card:hover .image-wrapper img {
+    transform: scale(1.05);
+}
+
+/* Card Content (Title & Description) */
+.card-content {
+    padding: 20px;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    color: #111827;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.card-description {
+    font-size: 0.95rem;
+    color: #4b5563;
+    line-height: 1.5;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 20px;
+    color: #9ca3af;
+    font-size: 0.875rem;
+    margin-top: auto;
+}
+
+/* Responsive Design for Tablets and Mobile Devices */
+@media (max-width: 768px) {
+    .header h1 {
+        font-size: 1.8rem;
+    }
+
+    .gallery-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 24px;
+    }
+
+    .gallery-card {
+        width: 100%;
+        max-width: 380px;
+    }
+
+    .image-wrapper {
+        height: 210px;
+    }
+}
